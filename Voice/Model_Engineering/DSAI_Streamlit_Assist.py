@@ -179,7 +179,7 @@ vAR_col2.image('../User_Interface/DSAI_Logo.jpg', use_column_width=True)
 st.title("Voice Based Chatbot") #set title for webpage
 
 #Reading in the input_corpus
-with open('../Data_Engineering/DSAI_Deepsphere_Bot_Reply','r', encoding='utf8', errors ='ignore') as fin:
+with open('../Utility/DSAI_Deepsphere_Bot_Reply','r', encoding='utf8', errors ='ignore') as fin:
     vAR_raw = fin.read().lower()
 
 def dialogue_act_features(post):
