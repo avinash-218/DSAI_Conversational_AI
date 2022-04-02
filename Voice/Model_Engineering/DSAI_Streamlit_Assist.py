@@ -29,7 +29,7 @@ from gtts import gTTS
 import os
 import playsound
 from PIL import Image
-import speech_recognition as sr 
+import speech_recognition as sr
 import nltk
 from nltk.stem import WordNetLemmatizer
 warnings.filterwarnings('ignore')
