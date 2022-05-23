@@ -12,15 +12,7 @@ class bot:
     #constructor
     self.keys = list(map(lambda x:re.compile(x[0], re.IGNORECASE),responses))
     self.values = list(map(lambda x:x[1],responses))
-
-  def translate(self,str,dict):
-    #method to translate input sentence
-    words = str.lower().split() #split sentences into words
-    keys = dict.keys();
-    for i in range(0,len(words)):
-      if words[i] in keys:
-        words[i] = dict[words[i]]
-    return ' '.join(words)
+    print(self.keys[0],self.values[0],sep='\n')
 
   def respond(self,str):
     #method to find response for input sentence

@@ -3,7 +3,7 @@ from rdflib.namespace import FOAF, RDFS, XSD
 import csv
 import spotlight
 
-# define namespaces
+# define custom namespaces
 ex = Namespace("http://example.org/")
 exdata = Namespace("http://example.org/data#")
 
