@@ -1,0 +1,70 @@
+import nltk
+from nltk.stem import WordNetLemmatizer
+import pickle
+import numpy as np
+from tensorflow import keras
+import json
+import random
+
+def load_dependencies():#load model,intents,words,classes files
+    model = keras.models.load_model('../Utility/DSAI_Chatbot_Model.h5') #load model
+    intents = json.loads(open('../Utility/DSAI_Intents.json').read()) #load json file
+    words = pickle.load(open('../Utility/DSAI_Words.pkl','rb')) #load saved words object (pickle)
+    classes = pickle.load(open('../Utility/DSAI_Classes.pkl','rb')) #load saved classes object (pickle)
+    return (model, intents, words, classes)
+
+def tokenize(sentence):#tokenize sentence into words
+    #sentence - input sentence
+    return nltk.word_tokenize(sentence)
+
+def lemmatize(words):#lemmatize words of input sentence
+    #words - tokenized words
+    lemmatizer = WordNetLemmatizer() #lemmatizer
+    sentence_words =[]
+    for i in words:
+        sentence_words.append(lemmatizer.lemmatize(i.lower()))
+    return sentence_words
+
+def bag_of_words(sentence_words, words):# return bag of words array: 0 or 1 for each word in the bag that exists in the sentence
+    #sentence_words - tokenized words
+    #words - words extracted from JSON
+    bag = [0]*len(words)# bag of words - matrix of N words, vocabulary matrix
+    for s in sentence_words:#loop through input sentence
+        for i,w in enumerate(words):#loop through saved words
+            if(w == s): #if input word present in sentence set as 1
+                bag[i] = 1
+    return(np.array(bag))
+
+def preprocess(sentence, words):#preprocessing of input sentence
+    #sentence - input sentence
+    #words - words extracted from JSON
+    sentence_words = tokenize(sentence)#tokenize
+    sentence_words = lemmatize(sentence_words)#lemmatize
+    return bag_of_words(sentence_words, words) #extract bag of words
+
+def predict_class(bag, classes, model):
+    #filter out predictions below a threshold
+    #classes - classes from JSON
+    #model - saved model by which class is to be predicted
+    res = model.predict(np.array([bag]))[0] #predict class
+    results=[]
+    for i,r in enumerate(res):
+        if(r > 0.25):#probability threshold
+            results.append([i,r])
+
+    # sort by strength of probability
+    results.sort(key=lambda x: x[1], reverse=True)
+    return_list = []
+    for r in results:
+        return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
+    return return_list
+
+def getResponse(ints, intents_json):
+    # get response for the input message after predicting class
+    tag = ints[0]['intent']
+    list_of_intents = intents_json['intents']
+
+    for i in list_of_intents:
+        if(i['tag']== tag):
+            result = random.choice(i['responses'])
+            return result
