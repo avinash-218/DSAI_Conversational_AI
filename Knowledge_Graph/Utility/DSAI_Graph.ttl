@@ -1,0 +1,55 @@
+@prefix exampleURI: <http://example.org/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix relation: <http://purl.org/vocab/relationship/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+exampleURI:Chandra a exampleURI:Person,
+        exampleURI:Teacher ;
+    exampleURI:Character exampleURI:Strict ;
+    exampleURI:Degree exampleURI:Phd ;
+    exampleURI:Guided exampleURI:ArjunProjects ;
+    exampleURI:Likes exampleURI:ChandraInterests ;
+    exampleURI:Teaches exampleURI:Arjun,
+        exampleURI:DS ;
+    exampleURI:WorksAt exampleURI:MSEC ;
+    exampleURI:age 48 .
+
+exampleURI:ArjunInterests rdf:first exampleURI:Blogging ;
+    rdf:rest ( exampleURI:Gaming exampleURI:Music ) .
+
+exampleURI:ChandraInterests rdf:first exampleURI:Mathematics ;
+    rdf:rest ( exampleURI:DS ) .
+
+exampleURI:Vijay a exampleURI:Person,
+        exampleURI:Student ;
+    exampleURI:Character exampleURI:Kind ;
+    exampleURI:Completed exampleURI:VijayProjects ;
+    exampleURI:Degree exampleURI:ME ;
+    exampleURI:Likes exampleURI:VijayInterests ;
+    exampleURI:Position exampleURI:Intern ;
+    exampleURI:StudiesAt exampleURI:TCE ;
+    exampleURI:WorksAt exampleURI:DeepSphere ;
+    exampleURI:age 18 ;
+    relation:friendOf exampleURI:Arjun .
+
+exampleURI:VijayInterests rdf:first exampleURI:Football ;
+    rdf:rest ( exampleURI:Gaming exampleURI:Coding ) .
+
+exampleURI:VijayProjects rdf:first exampleURI:TOPSIS ;
+    rdf:rest ( exampleURI:Action_Recognition ) .
+
+exampleURI:Arjun a exampleURI:Person,
+        exampleURI:Student ;
+    exampleURI:Character exampleURI:Friendly ;
+    exampleURI:Completed exampleURI:ArjunProjects ;
+    exampleURI:Degree exampleURI:BE ;
+    exampleURI:Likes exampleURI:ArjunInterests ;
+    exampleURI:Position exampleURI:Intern ;
+    exampleURI:StudiesAt exampleURI:MSEC ;
+    exampleURI:WorksAt exampleURI:DeepSphere ;
+    exampleURI:age 22 ;
+    relation:friendOf exampleURI:Vijay .
+
+exampleURI:ArjunProjects rdf:first exampleURI:Conversational_AI ;
+    rdf:rest ( exampleURI:Boosting_Techniques exampleURI:Style_GAN ) .
+
