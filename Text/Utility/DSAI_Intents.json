@@ -1,9 +1,30 @@
+/*
+Disclaimer:
+
+DeepSphere.AI developed these
+materials based on its team’s expertise
+and technical infrastructure, and we
+are sharing these materials strictly for
+learning and research. These learning
+resources may not work on other learning
+infrastructures and DeepSphere.AI
+advises the learners to use these materials
+at their own risk. As needed, we will be
+changing these materials without any
+notification and we have full ownership
+and accountability to make any change
+to these materials.
+
+Author : Avinash R
+  */
+
+
 {
   "intents": [
     {
       "tag": "greeting",
       "patterns": [ "Hi", "Hey", "What's up", "Are you there?", "Hello", "Hay" ],
-      "responses": [ "Hello! Welcome, I am Jarvis. DeepSphere's Chatbot. How can i help you?" ]
+      "responses": [ "Hello! Welcome, I am Jothi. DeepSphere's Chatbot. How can i help you?" ]
     },
     {
       "tag": "goodbye",
@@ -12,7 +33,7 @@
     },
     {
       "tag": "thanks",
-      "patterns": [ "Thanks", "Thank you", "I Appreciate it", "So kind of you", "Thanks for the help", "I really appreciate it!!!"],
+      "patterns": [ "Thanks", "Thank you", "I Appreciate it", "So kind of you", "Thanks for the help", "I really appreciate it!!!" ],
       "responses": [ "Glad to help!", "It's my pleasure", "You're most welcome!", "That's my pleasure'" ]
     },
     {
@@ -28,7 +49,7 @@
     {
       "tag": "name",
       "patterns": [ "what is your name", "whats your name?", "Who are You?", "How can I call you?", "Do you have a name?" ],
-      "responses": [ "You can call me Jarvis.", "I'm Jarvis!", "Just call me as Jarvis" ]
+      "responses": [ "You can call me Jothi.", "I'm Jothi!", "Just call me as Jothi" ]
     },
     {
       "tag": "service",
@@ -82,3 +103,17 @@
     }
   ]
 }
+
+
+/*
+
+Copyright Notice:
+
+Local and international copyright laws protect
+this material. Repurposing or reproducing
+this material without written approval from
+DeepSphere.AI violates the law.
+
+(c) DeepSphere.AI
+
+*/

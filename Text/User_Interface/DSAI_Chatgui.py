@@ -1,3 +1,23 @@
+'''
+Disclaimer:
+
+DeepSphere.AI developed these
+materials based on its team’s expertise
+and technical infrastructure, and we
+are sharing these materials strictly for
+learning and research. These learning
+resources may not work on other learning
+infrastructures and DeepSphere.AI
+advises the learners to use these materials
+at their own risk. As needed, we will be
+changing these materials without any
+notification and we have full ownership
+and accountability to make any change
+to these materials.
+
+Author : Avinash R
+'''
+
 import tkinter
 from tkinter import *
 from DSAI_Utility import *
@@ -20,7 +40,7 @@ def send_message():
     ChatLog.config(foreground="#442265", font=("Verdana", 12))
 
     res = chatbot_response(msg) #get response for the input message
-    ChatLog.insert(END, "Jarvis: " + res + '\n\n') #display response message in the chatlog
+    ChatLog.insert(END, "Jothi: " + res + '\n\n') #display response message in the chatlog
 
     ChatLog.config(state=DISABLED)
     ChatLog.yview(END)
@@ -29,7 +49,7 @@ if __name__=="__main__":
     model, intents, words, classes = load_dependencies()
 
     base = Tk() #creates tinker object
-    base.title("Jarvis - DeepSphere's Chatbot") #window title
+    base.title("Jothi - DeepSphere's Chatbot") #window title
     base.geometry("800x500") #window dimension
     base.resizable(width=FALSE, height=FALSE) #window is not resizable
 
@@ -56,7 +76,18 @@ if __name__=="__main__":
     SendButton.place(x=6, y=401, height=90)
 
     ChatLog.config(state = NORMAL)
-    ChatLog.insert(END, "Jarvis: " + chatbot_response('hi') + '\n\n') #display initial message in the chatlog
+    ChatLog.insert(END, "Jothi: " + chatbot_response('hi') + '\n\n') #display initial message in the chatlog
     ChatLog.config(foreground="#442265", font=("Verdana", 12))
     ChatLog.config(state=DISABLED)
     base.mainloop()
+
+'''
+Copyright Notice:
+
+Local and international copyright laws protect
+this material. Repurposing or reproducing
+this material without written approval from
+DeepSphere.AI violates the law.
+
+(c) DeepSphere.AI
+'''
