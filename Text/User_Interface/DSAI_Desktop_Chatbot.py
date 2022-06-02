@@ -27,8 +27,8 @@ from DSAI_Utility import *
 def chatbot_response(msg):
     # predicts class and getResponse for the input message
     # msg - input message from EntryBox
-    bag = preprocess(msg, words)
-    ints = predict_class(bag, classes, model)
+    bag = preprocess(msg, words)#returns bag of words (array of 0 and 1)
+    ints = predict_class(bag, classes, model) #return [{'intent':tag, 'probability':prob}]
     res = getResponse(ints, intents)
     return res
 
