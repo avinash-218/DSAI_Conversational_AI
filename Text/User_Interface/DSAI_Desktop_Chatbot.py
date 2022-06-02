@@ -16,6 +16,8 @@ and accountability to make any change
 to these materials.
 
 Author : Avinash R
+Chief Architect : Jothi Periasamy
+Reviewer : Jothi Periasamy
 '''
 
 import tkinter
