@@ -1,0 +1,32 @@
+Arjun is a Person
+Vijay is a Person
+Chandra is a Person
+Arjun is a friend of Vijay
+Vijay is a friend of Arjun
+Arjun is 22 years old
+Vijay is 18 years old
+Chandra is 48 years old
+Arjun has interest in Blogging, Gaming, Music
+Vijay has interest in Football, Gaming, Coding
+Chandra has interest in Mathematics, DS
+Arjun is a Student
+Vijay is a Student
+Chandra is a Teacher
+Arjun is Friendly
+Vijay is Kind
+Chandra is Strict
+Arjun works at Deepsphere
+Vijay works at Deepsphere
+Chandra works at MSEC
+Arjun position is Intern
+Vijay position is Intern
+Arjun Studies at MSEC
+Vijay Studies at TCE
+Chandra Teaches Arjun
+Chandra Teaches DS
+Arjun Studied BE
+Vijay Studied ME
+Chandra Studied Phd
+Arjun done projects in Conversational_AI, Boosting_Techniques, Style_GAN
+Vijay done projects in TOPSIS, Action_Recognition
+Chandra Guided Arjun
