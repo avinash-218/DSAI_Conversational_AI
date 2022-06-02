@@ -5,37 +5,37 @@
 
 exampleURI:LISA a foaf:Person ;
     exampleURI:Age "48"^^xsd:int ;
-    exampleURI:Character "STRICT" ;
-    exampleURI:Completed "PHD" ;
+    exampleURI:Character exampleURI:STRICT ;
+    exampleURI:Completed exampleURI:PHD ;
     exampleURI:Guided exampleURI:JOHN ;
-    exampleURI:Interest "DS" ;
-    exampleURI:Occupation "TEACHER" ;
-    exampleURI:Position "PRINCIPAL" ;
+    exampleURI:Interest exampleURI:DS ;
+    exampleURI:Occupation exampleURI:TEACHER ;
+    exampleURI:Position exampleURI:PRINCIPAL ;
     exampleURI:Teaches exampleURI:DS,
         exampleURI:JOHN ;
-    exampleURI:WorksAt "MSEC" .
+    exampleURI:WorksAt exampleURI:MSEC .
 
 exampleURI:MIKE a foaf:Person ;
     exampleURI:Age "18"^^xsd:int ;
-    exampleURI:Character "KIND" ;
-    exampleURI:Completed "ME" ;
-    exampleURI:DoneProject "BOOSTING_TECHNIQUES" ;
-    exampleURI:Interest "CODING" ;
-    exampleURI:Occupation "STUDENT" ;
-    exampleURI:Position "INTERN" ;
-    exampleURI:StudiesAt "TCE" ;
-    exampleURI:WorksAt "DEEPSPHERE" ;
+    exampleURI:Character exampleURI:KIND ;
+    exampleURI:Completed exampleURI:ME ;
+    exampleURI:DoneProject exampleURI:BOOSTING_TECHNIQUES ;
+    exampleURI:Interest exampleURI:CODING ;
+    exampleURI:Occupation exampleURI:STUDENT ;
+    exampleURI:Position exampleURI:INTERN ;
+    exampleURI:StudiesAt exampleURI:TCE ;
+    exampleURI:WorksAt exampleURI:DEEPSPHERE ;
     relation:friendOf exampleURI:JOHN .
 
 exampleURI:JOHN a foaf:Person ;
     exampleURI:Age "22"^^xsd:int ;
-    exampleURI:Character "FRIENDLY" ;
-    exampleURI:Completed "BE" ;
-    exampleURI:DoneProject "CONVERSATIONAL_AI" ;
-    exampleURI:Interest "BLOGGING" ;
-    exampleURI:Occupation "STUDENT" ;
-    exampleURI:Position "INTERN" ;
-    exampleURI:StudiesAt "MSEC" ;
-    exampleURI:WorksAt "DEEPSPHERE" ;
+    exampleURI:Character exampleURI:FRIENDLY ;
+    exampleURI:Completed exampleURI:BE ;
+    exampleURI:DoneProject exampleURI:CONVERSATIONAL_AI ;
+    exampleURI:Interest exampleURI:BLOGGING ;
+    exampleURI:Occupation exampleURI:STUDENT ;
+    exampleURI:Position exampleURI:INTERN ;
+    exampleURI:StudiesAt exampleURI:MSEC ;
+    exampleURI:WorksAt exampleURI:DEEPSPHERE ;
     relation:friendOf exampleURI:MIKE .
 
