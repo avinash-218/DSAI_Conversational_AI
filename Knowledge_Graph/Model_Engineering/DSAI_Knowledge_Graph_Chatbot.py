@@ -27,7 +27,7 @@ import re
 g = Graph()
 g.parse("./Utility/DSAI_Graph.ttl", format="turtle")
 
-class bot:
+class Bot:
   def respond(self,str):
     if(re.search("(who are|name) the students[?]?", str)):
       # returns students
@@ -185,7 +185,7 @@ def main():
   print('-'*100)
 
   s = ''
-  chatbot = bot();
+  chatbot = Bot();
   while s != 'quit':
     try:
       s = input('> ').lower()

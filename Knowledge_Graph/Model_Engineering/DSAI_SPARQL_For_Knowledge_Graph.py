@@ -20,7 +20,7 @@ Chief Architect : Jothi Periasamy
 Reviewer : Jothi Periasamy
 '''
 
-from rdflib import Graph, Literal
+from rdflib import Graph
 
 g = Graph()
 g.parse("./Utility/DSAI_Graph.ttl", format="turtle")
