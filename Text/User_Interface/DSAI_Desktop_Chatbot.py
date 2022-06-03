@@ -15,7 +15,7 @@ notification and we have full ownership
 and accountability to make any change
 to these materials.
 
-Author : Avinash R
+Author : Avinash R & Jothi Periasamy
 Chief Architect : Jothi Periasamy
 Reviewer : Jothi Periasamy
 '''
