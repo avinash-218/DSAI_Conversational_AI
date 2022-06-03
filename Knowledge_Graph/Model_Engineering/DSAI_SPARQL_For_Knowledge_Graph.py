@@ -72,7 +72,7 @@ SELECT ?student
 print("The Students are : ")
 for row in res:
     print(row[0].toPython().split('/')[-1])
-
+################################################
 # returns mike's interest
 res = g.query("""
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -99,6 +99,7 @@ print("Everyone has one or more interest in : ")
 for row in res:
     print(row[0].toPython().split('/')[-1])
 
+################################################
 # returns mike's age
 res = g.query("""
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
