@@ -1,21 +1,13 @@
 '''
 Disclaimer:
 
-DeepSphere.AI developed these
-materials based on its team’s expertise
-and technical infrastructure, and we
-are sharing these materials strictly for
-learning and research. These learning
-resources may not work on other learning
-infrastructures and DeepSphere.AI
-advises the learners to use these materials
-at their own risk. As needed, we will be
-changing these materials without any
-notification and we have full ownership
-and accountability to make any change
-to these materials.
+DeepSphere.AI developed these materials based on its team’s expertise and technical infrastructure, and we are sharing these materials strictly for learning and research.
+These learning resources may not work on other learning infrastructures and DeepSphere.AI advises the learners to use these materials at their own risk. As needed, we will
+be changing these materials without any notification and we have full ownership and accountability to make any change to these materials.
 
-Author : Avinash R & Jothi Periasamy    Chief Architect : Jothi Periasamy   Reviewer : Jothi Periasamy
+Author :                          Chief Architect :       Reviewer :
+----------------------------------------------------------------------------
+Avinash R & Jothi Periasamy       Jothi Periasamy         Jothi Periasamy
 '''
 
 import nltk
@@ -93,13 +85,11 @@ def getResponse(ints, intents_json):
     for i in list_of_intents:#for each tags in json data
         if(i['tag']== tag):#if tag matches
             return random.choice(i['responses'])#return random response
+
 '''
 Copyright Notice:
 
-Local and international copyright laws protect
-this material. Repurposing or reproducing
-this material without written approval from
-DeepSphere.AI violates the law.
+Local and international copyright laws protect this material. Repurposing or reproducing this material without written approval from DeepSphere.AI violates the law.
 
 (c) DeepSphere.AI
 '''
